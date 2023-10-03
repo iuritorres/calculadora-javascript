@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100svh;
+}
+
+body {
+  background: rgb(142, 142, 148);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+#calc-container {
+  background: rgba(24, 24, 27, 1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 320px;
+  height: 530px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 14px;
+  border-radius: 8px;
+}
+
+#calc-container .header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+#calc-container .header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+#calc-container .header div img {
+  width: 24px;
+}
+
+.mac-circles > div {
+  background-color: green;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+}
+
+.mac-circles > div:nth-child(1) {
+  background-color: #00CA4E;
+}
+.mac-circles > div:nth-child(2) {
+  background-color: #FFBD44;
+}
+.mac-circles > div:nth-child(3) {
+  background-color: #FF605C;
+}
+
+#result {
+  font-size: 2.6rem;
+  text-align: right;
+}
+
+.operations {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3px;
+}
+
+.operations > div > img {
+  width: 20px;
+}
+
+#calc-container .body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3px;
+}
+
+.button {
+  background: rgb(59, 59, 61);
+  width: 32%;
+  aspect-ratio: 1/0.6;
+  text-align: center;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button:hover {
+  background: rgb(74, 74, 77);
+  transition: all 150ms;
+}
